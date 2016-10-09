@@ -9,5 +9,8 @@
 import Charts
 
 class ChartView: CandleStickChartView {
-    
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }

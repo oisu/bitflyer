@@ -9,7 +9,7 @@
         <!--Board-->
         <scene sceneID="PCV-wX-3cL">
             <objects>
-                <viewController title="Board" id="FYb-87-fiv" sceneMemberID="viewController">
+                <viewController title="Board" id="FYb-87-fiv" customClass="BoardViewController" customModule="bitFlyer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j5Z-SF-dsH"/>
                         <viewControllerLayoutGuide type="bottom" id="B8Q-X9-ywu"/>

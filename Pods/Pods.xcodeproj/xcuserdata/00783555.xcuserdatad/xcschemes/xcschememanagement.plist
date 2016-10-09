@@ -14,21 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material-io.cosmicmind.material.icons.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Material.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftMoment.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyBeaver.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,32 +57,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0BD654D10E9088E8A9F993954FE42F45</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>226F3D15D112C6E2D91C123C35A84F53</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>28B32B71E638F3A5D3ED8826A1D0C0DC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EA3DE68988F01892E6AC1BF64B53C18</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>410ABB95AEB34B16E01BCF7420995010</key>
+		<key>33596C086A1F24818F7923FA7B9B8E25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>5082B6D93D22B823B45E90E18356277E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54A0F04BD46B7132A96BBA2FAF7B8F24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A14C8A1F05536054F486DD29189844FE</key>
+		<key>99E1BBA7A3A018FF03FA939D1697CBD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC911AFCCCAA952028F27336441D755A</key>
+		<key>A44CD673AF8D4DFE0410E872EC5B8F5F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C49518CEC1F3C4003F4CCDFD58AE4667</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC6045141AC9ACEFE17F768D1E9FF654</key>
 		<dict>
 			<key>primary</key>
 			<true/>

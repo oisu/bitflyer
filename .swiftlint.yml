@@ -18,6 +18,7 @@
 disabled_rules:
 - trailing_whitespace
 - type_name
+- todo
 
 line_length: 300
 

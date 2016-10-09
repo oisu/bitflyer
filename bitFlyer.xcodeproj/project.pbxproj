@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1434E3691DA7C61500B0EE51 /* CandleStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E3681DA7C61500B0EE51 /* CandleStick.swift */; };
+		1434E36C1DA7D26F00B0EE51 /* PubNubHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */; };
+		1434E36E1DA7D76200B0EE51 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E36D1DA7D76200B0EE51 /* Util.swift */; };
+		1479B9731DA7F06900617517 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1479B9721DA7F06900617517 /* Ticker.swift */; };
 		14841DE21DA531E300991132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14841DE11DA531E300991132 /* AppDelegate.swift */; };
 		14841DE41DA531E300991132 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14841DE31DA531E300991132 /* BoardViewController.swift */; };
 		14841DE71DA531E300991132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14841DE51DA531E300991132 /* Main.storyboard */; };
@@ -43,6 +47,10 @@
 /* Begin PBXFileReference section */
 		015D1C22E4CCA6C401BC367F /* Pods-bitFlyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitFlyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitFlyer/Pods-bitFlyer.release.xcconfig"; sourceTree = "<group>"; };
 		0B54B477077EB878B3B3A000 /* Pods-bitFlyerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitFlyerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bitFlyerUITests/Pods-bitFlyerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1434E3681DA7C61500B0EE51 /* CandleStick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleStick.swift; sourceTree = "<group>"; };
+		1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubNubHandler.swift; sourceTree = "<group>"; };
+		1434E36D1DA7D76200B0EE51 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = ../Util.swift; sourceTree = "<group>"; };
+		1479B9721DA7F06900617517 /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		14841DDE1DA531E300991132 /* bitFlyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitFlyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14841DE11DA531E300991132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14841DE31DA531E300991132 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1434E36A1DA7C61F00B0EE51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1434E3681DA7C61500B0EE51 /* CandleStick.swift */,
+				1479B9721DA7F06900617517 /* Ticker.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		14841DD51DA531E300991132 = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				14841DE11DA531E300991132 /* AppDelegate.swift */,
+				1434E36D1DA7D76200B0EE51 /* Util.swift */,
+				14D053131DA540E400EE9C0A /* Const.swift */,
 				14D053191DA54B2E00EE9C0A /* ViewControllers */,
 				14CDB0781DA55C7000966FAA /* Views */,
-				14D0531A1DA54B4600EE9C0A /* Common */,
+				1434E36A1DA7C61F00B0EE51 /* Models */,
+				14D0531A1DA54B4600EE9C0A /* Handlers */,
 				14841DE51DA531E300991132 /* Main.storyboard */,
 				14841DE81DA531E300991132 /* Assets.xcassets */,
 				14841DEA1DA531E300991132 /* LaunchScreen.storyboard */,
@@ -185,12 +205,12 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		14D0531A1DA54B4600EE9C0A /* Common */ = {
+		14D0531A1DA54B4600EE9C0A /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				14D053131DA540E400EE9C0A /* Const.swift */,
+				1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */,
 			);
-			name = Common;
+			name = Handlers;
 			sourceTree = "<group>";
 		};
 		CF0AFD422B5B8741578F8FCF /* Frameworks */ = {
@@ -501,11 +521,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1434E36C1DA7D26F00B0EE51 /* PubNubHandler.swift in Sources */,
+				1434E36E1DA7D76200B0EE51 /* Util.swift in Sources */,
 				14D053181DA5443800EE9C0A /* RootViewController.swift in Sources */,
 				14841DE41DA531E300991132 /* BoardViewController.swift in Sources */,
 				14D053161DA543A800EE9C0A /* ChartViewController.swift in Sources */,
+				1479B9731DA7F06900617517 /* Ticker.swift in Sources */,
 				14841DE21DA531E300991132 /* AppDelegate.swift in Sources */,
 				14D053141DA540E400EE9C0A /* Const.swift in Sources */,
+				1434E3691DA7C61500B0EE51 /* CandleStick.swift in Sources */,
 				14CDB0771DA55BB600966FAA /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

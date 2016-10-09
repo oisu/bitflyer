@@ -3,20 +3,20 @@ PODS:
   - Charts (3.0.0):
     - Charts/Core (= 3.0.0)
   - Charts/Core (3.0.0)
-  - Material (2.1.0)
   - ObjectMapper (2.0.0)
   - PubNub (4.5.3):
     - PubNub/Core (= 4.5.3)
   - PubNub/Core (4.5.3)
+  - SwiftMoment (0.5.1)
   - SwiftyBeaver (1.0.3)
   - SwiftyJSON (3.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
-  - Material
   - ObjectMapper (~> 2.0)
   - PubNub (~> 4.1)
+  - SwiftMoment (from `https://github.com/akosma/SwiftMoment.git`, branch `master`)
   - SwiftyBeaver
   - SwiftyJSON
 
@@ -24,21 +24,27 @@ EXTERNAL SOURCES:
   Charts:
     :branch: master
     :git: https://github.com/danielgindi/Charts.git
+  SwiftMoment:
+    :branch: master
+    :git: https://github.com/akosma/SwiftMoment.git
 
 CHECKOUT OPTIONS:
   Charts:
     :commit: 61d10babaebd59aa24e8afe3de90f0a685284fcf
     :git: https://github.com/danielgindi/Charts.git
+  SwiftMoment:
+    :commit: 41443c541c0739e7569315d92c33840cc1ec3190
+    :git: https://github.com/akosma/SwiftMoment.git
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Charts: 3f0da988b104c8e5f069fcef55da699f597dac67
-  Material: c5c334bd7fa8c0307cb35be143b7c51c5e2c52a7
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
   PubNub: 42623b6046ab65bb2ec9c4fb51791d86aa956926
+  SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
   SwiftyBeaver: e42a664ffbdb5ec68ce968ffd3c54f619c92e0d7
   SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
 
-PODFILE CHECKSUM: 4f1af208266ba6778cbd10af0791a5ca94aa673b
+PODFILE CHECKSUM: bc3d6d8dff5824829a74109b2d0c4590bffea16a
 
 COCOAPODS: 1.1.0.rc.2

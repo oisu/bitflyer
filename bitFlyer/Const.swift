@@ -14,5 +14,6 @@ struct Const {
         static let publishKey = "demo"
         static let subscribeKey = "sub-c-52a9ab50-291b-11e5-baaa-0619f8945a4f"
         static let channelName = "lightning_ticker_BTC_JPY"
+        static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
     }
 }
