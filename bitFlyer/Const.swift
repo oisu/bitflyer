@@ -16,4 +16,18 @@ struct Const {
         static let channelName = "lightning_ticker_BTC_JPY"
         static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSSZ"
     }
+
+    struct Api {
+        static let endpoint = "https://api.bitflyer.jp"
+        static let getBoard = "/v1/getboard"
+    }
+}
+
+enum QuoteType {
+    case ask
+    case bid
+
+    static func getDefault() -> QuoteType {
+        return .ask
+    }
 }

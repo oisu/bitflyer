@@ -10,7 +10,7 @@ import PubNub
 
 class PubNubHandler {
 
-    var client: PubNub
+    fileprivate var client: PubNub
 
     init() {
         let config = PNConfiguration(

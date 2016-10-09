@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1422E0971DAA7461009CFA30 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422E0961DAA7461009CFA30 /* RequestHandler.swift */; };
 		1434E3691DA7C61500B0EE51 /* CandleStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E3681DA7C61500B0EE51 /* CandleStick.swift */; };
 		1434E36C1DA7D26F00B0EE51 /* PubNubHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */; };
 		1434E36E1DA7D76200B0EE51 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1434E36D1DA7D76200B0EE51 /* Util.swift */; };
@@ -18,6 +19,12 @@
 		14841DEC1DA531E300991132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14841DEA1DA531E300991132 /* LaunchScreen.storyboard */; };
 		14841DF71DA531E300991132 /* bitFlyerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14841DF61DA531E300991132 /* bitFlyerTests.swift */; };
 		14841E021DA531E300991132 /* bitFlyerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14841E011DA531E300991132 /* bitFlyerUITests.swift */; };
+		14C4F67C1DAA786700BE2F8A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F67B1DAA786700BE2F8A /* Error.swift */; };
+		14C4F67E1DAA82A400BE2F8A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F67D1DAA82A400BE2F8A /* Board.swift */; };
+		14C4F6801DAA833800BE2F8A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F67F1DAA833800BE2F8A /* Quote.swift */; };
+		14C4F6821DAA839D00BE2F8A /* Bid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F6811DAA839D00BE2F8A /* Bid.swift */; };
+		14C4F6841DAA842700BE2F8A /* Ask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F6831DAA842700BE2F8A /* Ask.swift */; };
+		14C4F6861DAA90D000BE2F8A /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C4F6851DAA90D000BE2F8A /* QuoteCell.swift */; };
 		14CDB0771DA55BB600966FAA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CDB0761DA55BB600966FAA /* ChartView.swift */; };
 		14D053141DA540E400EE9C0A /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D053131DA540E400EE9C0A /* Const.swift */; };
 		14D053161DA543A800EE9C0A /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D053151DA543A800EE9C0A /* ChartViewController.swift */; };
@@ -47,6 +54,7 @@
 /* Begin PBXFileReference section */
 		015D1C22E4CCA6C401BC367F /* Pods-bitFlyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitFlyer.release.xcconfig"; path = "Pods/Target Support Files/Pods-bitFlyer/Pods-bitFlyer.release.xcconfig"; sourceTree = "<group>"; };
 		0B54B477077EB878B3B3A000 /* Pods-bitFlyerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bitFlyerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bitFlyerUITests/Pods-bitFlyerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1422E0961DAA7461009CFA30 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		1434E3681DA7C61500B0EE51 /* CandleStick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleStick.swift; sourceTree = "<group>"; };
 		1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubNubHandler.swift; sourceTree = "<group>"; };
 		1434E36D1DA7D76200B0EE51 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Util.swift; path = ../Util.swift; sourceTree = "<group>"; };
@@ -64,6 +72,12 @@
 		14841DFD1DA531E300991132 /* bitFlyerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitFlyerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14841E011DA531E300991132 /* bitFlyerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitFlyerUITests.swift; sourceTree = "<group>"; };
 		14841E031DA531E400991132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C4F67B1DAA786700BE2F8A /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		14C4F67D1DAA82A400BE2F8A /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		14C4F67F1DAA833800BE2F8A /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		14C4F6811DAA839D00BE2F8A /* Bid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bid.swift; sourceTree = "<group>"; };
+		14C4F6831DAA842700BE2F8A /* Ask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ask.swift; sourceTree = "<group>"; };
+		14C4F6851DAA90D000BE2F8A /* QuoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
 		14CDB0761DA55BB600966FAA /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		14D053111DA5333D00EE9C0A /* bitFlyer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bitFlyer-Bridging-Header.h"; sourceTree = "<group>"; };
 		14D053131DA540E400EE9C0A /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -124,6 +138,11 @@
 			children = (
 				1434E3681DA7C61500B0EE51 /* CandleStick.swift */,
 				1479B9721DA7F06900617517 /* Ticker.swift */,
+				14C4F67B1DAA786700BE2F8A /* Error.swift */,
+				14C4F67D1DAA82A400BE2F8A /* Board.swift */,
+				14C4F67F1DAA833800BE2F8A /* Quote.swift */,
+				14C4F6811DAA839D00BE2F8A /* Bid.swift */,
+				14C4F6831DAA842700BE2F8A /* Ask.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -191,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				14CDB0761DA55BB600966FAA /* ChartView.swift */,
+				14C4F6851DAA90D000BE2F8A /* QuoteCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				1434E36B1DA7D26F00B0EE51 /* PubNubHandler.swift */,
+				1422E0961DAA7461009CFA30 /* RequestHandler.swift */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -236,7 +257,6 @@
 				14841DDC1DA531E300991132 /* Resources */,
 				651E933C1CAB8C1AE56A46EF /* [CP] Embed Pods Frameworks */,
 				C4952033C57D01E656E8F85B /* [CP] Copy Pods Resources */,
-				14D053121DA53C3C00EE9C0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -366,19 +386,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14D053121DA53C3C00EE9C0A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
 		651E933C1CAB8C1AE56A46EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -524,12 +531,19 @@
 				1434E36C1DA7D26F00B0EE51 /* PubNubHandler.swift in Sources */,
 				1434E36E1DA7D76200B0EE51 /* Util.swift in Sources */,
 				14D053181DA5443800EE9C0A /* RootViewController.swift in Sources */,
+				14C4F6841DAA842700BE2F8A /* Ask.swift in Sources */,
 				14841DE41DA531E300991132 /* BoardViewController.swift in Sources */,
+				1422E0971DAA7461009CFA30 /* RequestHandler.swift in Sources */,
 				14D053161DA543A800EE9C0A /* ChartViewController.swift in Sources */,
+				14C4F67E1DAA82A400BE2F8A /* Board.swift in Sources */,
 				1479B9731DA7F06900617517 /* Ticker.swift in Sources */,
 				14841DE21DA531E300991132 /* AppDelegate.swift in Sources */,
 				14D053141DA540E400EE9C0A /* Const.swift in Sources */,
+				14C4F6861DAA90D000BE2F8A /* QuoteCell.swift in Sources */,
+				14C4F6821DAA839D00BE2F8A /* Bid.swift in Sources */,
+				14C4F67C1DAA786700BE2F8A /* Error.swift in Sources */,
 				1434E3691DA7C61500B0EE51 /* CandleStick.swift in Sources */,
+				14C4F6801DAA833800BE2F8A /* Quote.swift in Sources */,
 				14CDB0771DA55BB600966FAA /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

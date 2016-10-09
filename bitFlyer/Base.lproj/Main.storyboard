@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +18,99 @@
                     <view key="view" contentMode="scaleToFill" id="gpo-GT-SId">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vFM-T2-f08">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" id="S74-Jf-wSe">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S74-Jf-wSe" id="ns7-62-TXV">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXl-aw-mE9">
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNF-P6-rWL">
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="DNF-P6-rWL" secondAttribute="bottom" id="9K4-B9-X6p"/>
+                                                <constraint firstItem="DNF-P6-rWL" firstAttribute="top" secondItem="ns7-62-TXV" secondAttribute="top" id="M6Y-LQ-yfx"/>
+                                                <constraint firstItem="HXl-aw-mE9" firstAttribute="width" secondItem="ns7-62-TXV" secondAttribute="width" multiplier="0.5" id="Rmb-Dx-2fm"/>
+                                                <constraint firstItem="HXl-aw-mE9" firstAttribute="leading" secondItem="ns7-62-TXV" secondAttribute="leading" id="f9K-iK-peI"/>
+                                                <constraint firstItem="HXl-aw-mE9" firstAttribute="top" secondItem="ns7-62-TXV" secondAttribute="top" id="kTT-Dz-XHh"/>
+                                                <constraint firstItem="DNF-P6-rWL" firstAttribute="width" secondItem="ns7-62-TXV" secondAttribute="width" multiplier="0.5" id="myl-Bf-b7C"/>
+                                                <constraint firstAttribute="bottom" secondItem="HXl-aw-mE9" secondAttribute="bottom" id="plB-eW-9Kv"/>
+                                                <constraint firstAttribute="trailing" secondItem="DNF-P6-rWL" secondAttribute="trailing" id="wfi-GD-oj2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuoteCell" id="zP5-US-dNM" customClass="QuoteCell" customModule="bitFlyer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zP5-US-dNM" id="B9g-sV-WyM">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="70000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdZ-Iz-c32">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DG8-69-8JR">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BdZ-Iz-c32" firstAttribute="leading" secondItem="B9g-sV-WyM" secondAttribute="leading" id="AIk-7a-cFA"/>
+                                                <constraint firstItem="BdZ-Iz-c32" firstAttribute="width" secondItem="B9g-sV-WyM" secondAttribute="width" multiplier="0.5" id="DQk-fW-kuH"/>
+                                                <constraint firstAttribute="bottom" secondItem="DG8-69-8JR" secondAttribute="bottom" id="Dqh-AZ-udE"/>
+                                                <constraint firstAttribute="trailing" secondItem="DG8-69-8JR" secondAttribute="trailing" id="HZd-Zf-6YH"/>
+                                                <constraint firstAttribute="bottom" secondItem="BdZ-Iz-c32" secondAttribute="bottom" id="bzM-tk-CfV"/>
+                                                <constraint firstItem="DG8-69-8JR" firstAttribute="top" secondItem="B9g-sV-WyM" secondAttribute="top" id="cGJ-qe-SIF"/>
+                                                <constraint firstItem="DG8-69-8JR" firstAttribute="width" secondItem="B9g-sV-WyM" secondAttribute="width" multiplier="0.5" id="pqq-6v-IPh"/>
+                                                <constraint firstItem="BdZ-Iz-c32" firstAttribute="top" secondItem="B9g-sV-WyM" secondAttribute="top" id="rM3-e0-4mo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="priceLabel" destination="BdZ-Iz-c32" id="SQj-ZX-gde"/>
+                                            <outlet property="sizeLabel" destination="DG8-69-8JR" id="g9J-Os-dMS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FYb-87-fiv" id="qb9-FX-JoY"/>
+                                    <outlet property="delegate" destination="FYb-87-fiv" id="Gp1-dP-VFU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vFM-T2-f08" firstAttribute="top" secondItem="gpo-GT-SId" secondAttribute="top" id="9BV-S8-yYj"/>
+                            <constraint firstItem="vFM-T2-f08" firstAttribute="leading" secondItem="gpo-GT-SId" secondAttribute="leading" id="NQE-CF-Hu4"/>
+                            <constraint firstAttribute="trailing" secondItem="vFM-T2-f08" secondAttribute="trailing" id="byC-Kl-Ldu"/>
+                            <constraint firstItem="B8Q-X9-ywu" firstAttribute="top" secondItem="vFM-T2-f08" secondAttribute="bottom" id="mD3-NS-Bqd"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Board" selectedImage="ic_star_border_white" id="TMb-P5-ULi"/>
+                    <tabBarItem key="tabBarItem" selectedImage="ic_star_border_white" systemItem="mostViewed" id="TMb-P5-ULi"/>
+                    <connections>
+                        <outlet property="boardTableView" destination="vFM-T2-f08" id="YTa-Qa-zgO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvY-HV-Cuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="365"/>
+            <point key="canvasLocation" x="1696.8" y="364.7676161919041"/>
         </scene>
         <!--Chart-->
         <scene sceneID="Xop-mS-bJF">
@@ -49,7 +136,7 @@
                             <constraint firstItem="9yf-qM-cVI" firstAttribute="leading" secondItem="FAb-Nj-76o" secondAttribute="leading" id="tg0-pO-WyP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chart" selectedImage="ic_star_white" id="O4b-sm-0IT"/>
+                    <tabBarItem key="tabBarItem" selectedImage="ic_star_white" systemItem="mostRecent" id="O4b-sm-0IT"/>
                     <connections>
                         <outlet property="chartView" destination="9yf-qM-cVI" id="psf-Ck-nQX"/>
                     </connections>
@@ -62,7 +149,7 @@
         <scene sceneID="wUg-Vp-6ZM">
             <objects>
                 <navigationController id="k4f-2d-tkw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xTL-SL-Na7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xTL-SL-Na7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -74,11 +161,11 @@
             </objects>
             <point key="canvasLocation" x="-132" y="36"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--bitFlyer API Example-->
         <scene sceneID="x9D-yS-jVj">
             <objects>
                 <tabBarController id="ZI4-U6-W1u" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="XmT-sR-Beh"/>
+                    <navigationItem key="navigationItem" title="bitFlyer API Example" id="XmT-sR-Beh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="0w3-pr-SNO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -11,17 +11,14 @@ import PubNub
 import Charts
 import ObjectMapper
 
-enum ChartType {
-    case bid, ask
-}
 
 class ChartViewController: UIViewController {
 
-    @IBOutlet weak var chartView: ChartView!
+    @IBOutlet fileprivate weak var chartView: ChartView!
 
     private var pubNubHandler = PubNubHandler()
 
-    fileprivate var chartType = ChartType.ask
+    fileprivate var quoteType = QuoteType.getDefault()
     fileprivate var tickerPool: [Ticker] = []
     fileprivate var candleStickPool: [CandleStick] = []
 
@@ -73,7 +70,7 @@ extension ChartViewController {
         return false
     }
     fileprivate func getPrice(ticker: Ticker) -> Double? {
-        switch chartType {
+        switch quoteType {
         case .ask:
             return ticker.bestAsk
         case .bid:
@@ -97,12 +94,14 @@ extension ChartViewController: PNObjectEventListener {
         guard
             let rawMessage = message.data.message,
             let jsonObject = rawMessage as? [String: Any] else {
+                // TODO: Handle error
                 return
         }
         Logger.print("Received message: \(rawMessage)")
 
         // Mapping
         guard let currentTicker = Mapper<Ticker>().map(JSON: jsonObject) else {
+            // TODO: Handle error
             return
         }
 
@@ -136,7 +135,7 @@ extension ChartViewController: PNObjectEventListener {
 }
 
 extension ChartViewController: ChartViewDelegate {
-    private func chartValueSelected(chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         Logger.print("chartValueSelected")
     }
     
